@@ -21,10 +21,12 @@ else:
 
     new_list = [i for i in my_list if  i/X >= 1] 
     print(new_list)
-    min = ""
-    for i in range(len(new_list)):
-     if i < i+1:
+    min = 10
+    for i in range(1,len(new_list)):
+        
+        if min > new_list[i]:
          min = new_list[i]
+         
 
 
     print(min)
